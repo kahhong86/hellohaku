@@ -143,6 +143,10 @@ figure{
 		padding:0;
 		background:transparent;
 	}
+	#header .localnav ul{
+		padding: 0;
+		text-align: center;
+	}
 }
 
 #header .localnav .button{
@@ -232,7 +236,7 @@ figure{
 }
 
 .img-content .container{
-	padding: 80px 100px;
+	padding: 80px 100px 60px;
 }
 
 @media only screen and (max-width: 1068px){
@@ -248,6 +252,7 @@ figure{
 
 .about .visuals{
 	background-image:url("../images/hero2.png");
+	background-size:cover;
 }
 
 
@@ -451,6 +456,9 @@ ul.featured li .item{
 	max-width: 880px;
 }
 
+.plans .splide__track{
+}
+
 .plans .splide__list{
 	display:flex;
 	flex-wrap: wrap;
@@ -465,7 +473,7 @@ ul.featured li .item{
 	background:#FFF;
 	border:1px solid #93D3CD;
 	border-radius:25px;
-	margin:0 auto;
+	margin:0 25px;
 	padding:50px 20px;
 	box-shadow:0 10px 20px -10px #333;
 	color:#fff;
@@ -474,13 +482,26 @@ ul.featured li .item{
 	position: relative;
 }
 
+@media only screen and (max-width: 1068px){
+	.plans .tile-content{
+		margin:0 auto;
+	}
+}
+
 .plans .style1{
 	transition:all 0.5s;
 }
 
 .plans .style1:hover{
-	padding:60px 30px;
-	margin:-10px auto;
+	padding:60px 25px;
+	margin:-10px 20px;
+}
+
+@media only screen and (max-width: 1068px){
+	.plans .style1:hover{
+		padding:60px 25px;
+		margin:-10px auto;
+	}
 }
 
 .plans .style1:hover .button{
@@ -512,6 +533,10 @@ ul.featured li .item{
 }
 
 .plans p{
+	color:#fff;
+}
+
+.plans .tile p{
 	font-size:14px;
 	margin:0 0 20px;
 }
@@ -799,7 +824,9 @@ form input[type="button"]{
 	text-decoration: underline;
 }
 
-
+#whatsapp{
+	cursor: pointer;
+}
 
 
 
