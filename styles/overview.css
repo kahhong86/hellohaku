@@ -446,7 +446,6 @@ ul.featured li .item{
 
 .plans{
 	padding:80px;
-	text-align: center;
 	background:transparent;
 	position: relative;
 	overflow: hidden;
@@ -534,11 +533,72 @@ ul.featured li .item{
 
 .plans p{
 	color:#fff;
+	text-align: center;
+}
+
+.plans strong{
+	color:#666;
 }
 
 .plans .tile p{
 	font-size:14px;
 	margin:0 0 20px;
+	text-align: left;
+}
+
+.plans ul{
+	margin:0 0 20px 20px;
+	padding:0;
+
+}
+
+.plans ul li{
+	color:#999;
+	text-align: left;
+	font-size:14px;
+	margin:0 0 10px;
+	line-height: 150%;
+}
+
+.plans .arrow{
+	margin:0 0 20px 25px;
+}
+
+.plans .arrow li{
+  list-style-type: none;
+}
+
+.plans .arrow li::before {
+  content: "\21AA";
+  color: #58C7B4;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin:0 11px 0 -25px;
+ }
+
+.plans .basic{
+	margin-left:0;
+}
+
+.plans .basic li{
+	list-style-type: none;
+	border-top:1px solid #68C7B8;
+	font-size:13px;
+	padding:15px 0 10px;
+}
+
+.plans .basic li:last-child{
+	padding-bottom: 0;
+}
+
+
+.plans ul.featured{
+	margin:0 0 20px 0;
+}
+
+.plans ul.featured li{
+	padding-left: 30px
 }
 
 .plans .button{
@@ -573,7 +633,7 @@ ul.featured li .item{
 	z-index: -1;
 	width: 150vw;
 	height:80vh;
-	top:-15vh;
+	top:10vh;
 	left: 0;
 	transform: rotate(-10deg);
 }
