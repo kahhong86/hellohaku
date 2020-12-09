@@ -183,6 +183,7 @@ figure{
 	display:inline-block;
 	padding:0 10px;
 	transition:border 0.5s;
+	vertical-align: top;
 }
 
 #header .localnav ul li a{
@@ -201,6 +202,23 @@ figure{
 
 #header .localnav ul li .button:hover{
 	border-bottom:1px solid transparent;
+}
+
+#header .localnav ul li.login a{
+	padding:5px;
+}
+
+#header .localnav ul li.login a svg{
+	fill:#58C7B4;
+	transition: fill 0.5s;
+}
+
+#header .localnav ul li.login:hover a svg{
+	fill:#4FB2AB;
+}
+
+#header .localnav ul li.login:hover a{
+	border-bottom:0;
 }
 
 #maincontainer{
@@ -223,6 +241,7 @@ figure{
 .img-content .visuals{
 	overflow: hidden;
 	line-height: 0;
+	background:#ccc;
 }
 
 .img-content .visuals img{
@@ -407,31 +426,25 @@ ul.featured li .item{
 	}
 }
 
-.testimonials .tile{
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-}
-
 .testimonials .customer{
 	background:transparent url("../images/testimonial-start.png") no-repeat scroll center left;
-	padding-left:70px;
+	padding-left:7px;
 }
 
 .testimonials .customer .customer-container{
 	background:transparent url("../images/testimonial-end.png") no-repeat scroll center right;
-	padding-right: 70px;
+	padding-right: 7px;
 	vertical-align: top;
 }
 
 @media only screen and (max-width: 1068px){
 	.testimonials .customer{
-		background-position: 7% 50%;
-		padding-left:55px;
+		background-position: 5% 50%;
+		padding-left:25px;
 	}
 	.testimonials .customer .customer-container{
-		background-position: 91% 50%;
-		padding-right:55px;
+		background-position: 95% 50%;
+		padding-right:25px;
 	}
 }
 
@@ -449,10 +462,21 @@ ul.featured li .item{
 	background:transparent;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1068px){
+	.plans{
+		padding:80px 30px;
+	}
+}
+
+.plans .splide__pagination{
+	margin:0 0 20px; 
 }
 
 .plans .wrapper{
-	max-width: 880px;
+	max-width: 1024px;
 }
 
 .plans .splide__track{
@@ -476,9 +500,16 @@ ul.featured li .item{
 	padding:50px 20px;
 	box-shadow:0 10px 20px -10px #333;
 	color:#fff;
-	width:200px;
+	width:250px;
 	display: block;
 	position: relative;
+}
+
+@media only screen and (max-width: 1175px){
+	.plans .tile-content{
+		width:220px;
+		margin:0 20px;
+	}
 }
 
 @media only screen and (max-width: 1068px){
@@ -492,16 +523,9 @@ ul.featured li .item{
 }
 
 .plans .style1:hover{
-	padding:60px 25px;
-	margin:-10px 20px;
+	box-shadow:0 10px 20px -5px #000;
 }
 
-@media only screen and (max-width: 1068px){
-	.plans .style1:hover{
-		padding:60px 25px;
-		margin:-10px auto;
-	}
-}
 
 .plans .style1:hover .button{
 	color:#fff;
@@ -543,11 +567,10 @@ ul.featured li .item{
 .plans .tile p{
 	font-size:14px;
 	margin:0 0 20px;
-	text-align: left;
 }
 
 .plans ul{
-	margin:0 0 20px 20px;
+	margin:0 0 20px 25px;
 	padding:0;
 
 }
@@ -560,15 +583,15 @@ ul.featured li .item{
 	line-height: 150%;
 }
 
-.plans .arrow{
+.arrow{
 	margin:0 0 20px 25px;
 }
 
-.plans .arrow li{
+.arrow li{
   list-style-type: none;
 }
 
-.plans .arrow li::before {
+.arrow li::before {
   content: "\21AA";
   color: #58C7B4;
   font-weight: bold;
